@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+  </head>
+  <body>
+    <h1 class="heading">Standard Calculator</h1>
+    <div class="calculator">
+      <!-- display screen -->
+      <div class="display">
+        <!-- this will take input and display result -->
+        <input type="text" id="result" />
+      </div>
+
+      <!-- this is the number sections -->
+      <div class="inputs">
+        <!-- here are the numbers from 0-9 including c and . -->
+        <div class="numbers">
+          <table>
+            <!-- input value from 7-9 -->
+            <tr>
+              <td><input type="button" value="7" onclick="dis('7')" /></td>
+              <td><input type="button" value="8" onclick="dis('8')" /></td>
+              <td><input type="button" value="9" onclick="dis('9')" /></td>
+            </tr>
+
+            <!-- input value from 4-6 -->
+            <tr>
+              <td><input type="button" value="4" onclick="dis('4')" /></td>
+              <td><input type="button" value="5" onclick="dis('5')" /></td>
+              <td><input type="button" value="6" onclick="dis('6')" /></td>
+            </tr>
+            <!-- input value from 1-3 -->
+            <tr>
+              <td><input type="button" value="1" onclick="dis('1')" /></td>
+              <td><input type="button" value="2" onclick="dis('2')" /></td>
+              <td><input type="button" value="3" onclick="dis('3')" /></td>
+            </tr>
+            <!-- input value .,0,c -->
+            <tr>
+              <td><input type="button" value="." onclick="dis('.')" /></td>
+              <td><input type="button" value="0" onclick="dis('0')" /></td>
+              <td>
+                <input
+                  type="button"
+                  value="C"
+                  onclick="clr()"
+                  style="color: red"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- operators section -->
+        <div class="operators">
+          <table>
+            <tr>
+              <td><input type="button" value="/" onclick="dis('/')" /></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="x" onclick="dis('x')" /></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="-" onclick="dis('-')" /></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="+" onclick="dis('+')" /></td>
+            </tr>
+            <tr>
+              <td><input type="button" value="=" onclick="solve()" /></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="calc.js"></script>
+</html>

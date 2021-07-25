@@ -1,0 +1,81 @@
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  position: relative;
+  top: 4rem;
+  left: 12rem;
+  color: red;
+  text-transform: uppercase;
+}
+.calculator {
+  background-color: rgb(0, 0, 0);
+  width: 40rem;
+  height: 35rem;
+  border: 0.2rem solid;
+  padding: 0.5rem;
+  position: relative;
+  top: 5rem;
+  left: 5rem;
+}
+
+/* display screen */
+.display {
+  width: 100%;
+  height: 6rem;
+  /* border: 2px solid green; */
+  /* margin: .1rem; */
+}
+#result {
+  width: 100%;
+  height: 5.6rem;
+  font-size: 4rem;
+}
+#result:focus {
+  outline: none;
+}
+
+/* inputs style */
+
+.inputs {
+  /* border: 2px solid blue; */
+  width: 100%;
+  height: 28rem;
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+/* numbers styling */
+.numbers {
+  /* border: 2px solid yellowgreen; */
+  flex: 65%;
+  height: auto;
+}
+
+.numbers tr input {
+  width: 8.5rem;
+  height: 6rem;
+  margin: 3px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* operators styling */
+.operators {
+  flex: 34%;
+  /* border: 2px solid red; */
+}
+.operators tr input {
+  width: 9.6rem;
+  height: 4.8rem;
+  margin-left: 0.5rem;
+  margin-top: 0.3rem;
+  color: red;
+  font-size: 3rem;
+  text-align: center;
+}
